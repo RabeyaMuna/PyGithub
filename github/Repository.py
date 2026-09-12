@@ -2208,7 +2208,7 @@ class Repository(CompletableGithubObject):
         archived: Opt[bool] = NotSet,
         allow_forking: Opt[bool] = NotSet,
         web_commit_signoff_required: Opt[bool] = NotSet,
-        security_and_analysis: Opt[dict[Any]] = NotSet,
+        security_and_analysis: Opt[dict[str, Any]] = NotSet,
     ) -> None:
         """
         :calls: `PATCH /repos/{owner}/{repo} <https://docs.github.com/en/rest/reference/repos>`_
@@ -4086,7 +4086,8 @@ class Repository(CompletableGithubObject):
         assert is_autolink or isinstance(autolink, int), autolink
 
         status, _, _ = self._requester.requestJson(
-            "DELETE", f"{self.url}/autolinks/{autolink.id if is_autolink else autolink}"  # type: ignore
+            "DELETE",
+            f"{self.url}/autolinks/{autolink.id if is_autolink else autolink}",  # type: ignore
         )
         return status == 204
 
@@ -4599,13 +4600,16 @@ class Repository(CompletableGithubObject):
         assert state in ["dismissed", "open"], "State can be one of ['dismissed', 'open']"
         if state == "dismissed":
             assert is_defined(dismissed_reason)
-            assert dismissed_reason in [
-                "fix_started",
-                "inaccurate",
-                "no_bandwidth",
-                "not_used",
-                "tolerable_risk",
-            ], "Dismissed reason can be one of ['fix_started', 'inaccurate', 'no_bandwidth', 'not_used', 'tolerable_risk']"
+            assert (
+                dismissed_reason
+                in [
+                    "fix_started",
+                    "inaccurate",
+                    "no_bandwidth",
+                    "not_used",
+                    "tolerable_risk",
+                ]
+            ), "Dismissed reason can be one of ['fix_started', 'inaccurate', 'no_bandwidth', 'not_used', 'tolerable_risk']"
         assert is_optional(dismissed_comment, str), dismissed_comment
         headers, data = self._requester.requestJsonAndCheck(
             "PATCH",
