@@ -41,16 +41,16 @@ from datetime import datetime
 
 from typing import Any
 import urllib.parse
-from github.GithubObject import Attribute, CompletableGithubObject, NotSet, Opt, is_optional
+from github.GithubObject import Attribute, CompletableGithubObject, NotSet
 
 
 class IssueType(CompletableGithubObject):
-    """
-    This class represents IssueTypes.
-    
+    """This class represents IssueTypes.
+
     The OpenAPI schema can be found at
     - /components/schemas/issue-type
     """
+
     def _initAttributes(self) -> None:
         self._id: Attribute[int] = NotSet
         self._node_id: Attribute[str] = NotSet
@@ -60,7 +60,7 @@ class IssueType(CompletableGithubObject):
         self._created_at: Attribute[datetime] = NotSet
         self._updated_at: Attribute[datetime] = NotSet
         self._is_enabled: Attribute[bool] = NotSet
-        
+
     def __repr__(self) -> str:
         return self.get__repr__({"name": self._name.value})
     
@@ -87,7 +87,7 @@ class IssueType(CompletableGithubObject):
     def description(self) -> str:
         self._completeIfNotSet(self._description)
         return self._description.value
-        
+
     @property
     def color(self) -> str:
         self._completeIfNotSet(self._color)
@@ -125,4 +125,3 @@ class IssueType(CompletableGithubObject):
             self._updated_at = self._makeDatetimeAttribute(attributes["updated_at"])
         if "is_enabled" in attributes:
             self._is_enabled = self._makeBoolAttribute(attributes["is_enabled"])
-            

@@ -74,11 +74,9 @@ import github.Label
 import github.IssueType
 import github.Milestone
 import github.NamedUser
-import github.Organization
 import github.PullRequest
 import github.Reaction
 import github.Repository
-import github.TimelineEvent
 from github import Consts
 from github.GithubObject import (
     Attribute,
@@ -108,16 +106,13 @@ if TYPE_CHECKING:
 
 
 class Issue(CompletableGithubObject):
-    """
-    This class represents Issues.
+    """This class represents Issues.
 
-    The reference can be found here
-    https://docs.github.com/en/rest/reference/issues
+    The reference can be found here: https://docs.github.com/en/rest/reference/issues
 
     The OpenAPI schema can be found at
     - /components/schemas/issue
     - /components/schemas/nullable-issue
-
     """
 
     def _initAttributes(self) -> None:
@@ -157,7 +152,6 @@ class Issue(CompletableGithubObject):
         self._url: Attribute[str] = NotSet
         self._user: Attribute[NamedUser] = NotSet
         self._type: Attribute[IssueType] = NotSet
-        
 
     def __repr__(self) -> str:
         return self.get__repr__({"number": self._number.value, "title": self._title.value})
@@ -346,18 +340,19 @@ class Issue(CompletableGithubObject):
     def user(self) -> NamedUser:
         self._completeIfNotSet(self._user)
         return self._user.value
-    
+
     @property
     def type(self) -> IssueType:
         self._completeIfNotSet(self._type)
         return self._type.value
-    
 
     def as_pull_request(self) -> PullRequest:
         """
         :calls: `GET /repos/{owner}/{repo}/pulls/{number} <https://docs.github.com/en/rest/reference/pulls>`_
         """
-        headers, data = self._requester.requestJsonAndCheck("GET", "/pulls/".join(self.url.rsplit("/issues/", 1)))
+        headers, data = self._requester.requestJsonAndCheck(
+            "GET", "/pulls/".join(self.url.rsplit("/issues/", 1))
+        )
         return github.PullRequest.PullRequest(self._requester, headers, data, completed=True)
 
     def add_to_assignees(self, *assignees: NamedUser | str) -> None:
