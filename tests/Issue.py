@@ -127,7 +127,7 @@ class Issue(Framework.TestCase):
                 "eyes": 0,
             },
         )
-        
+
         # test issue type data
         self.assertEqual(self.issue.type.id, 534535)
         self.assertEqual(self.issue.type.node_id, "IT_kwDOAF3p4s4ACCgH")
