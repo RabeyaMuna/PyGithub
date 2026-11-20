@@ -4277,7 +4277,7 @@ class Repository(CompletableGithubObject):
             f"{self.url}/code-scanning/alerts",
             url_parameters,
         )
-    
+
     def get_codescan_alert(self, number: int) -> CodeScanAlert:
         """
         :calls: `GET /repos/{owner}/{repo}/code-scanning/alerts/{alert_number} <https://docs.github.com/en/rest/code-scanning/code-scanning#get-a-code-scanning-alert>`_
@@ -4347,7 +4347,7 @@ class Repository(CompletableGithubObject):
             f"{self.url}/secret-scanning/alerts",
             url_parameters,
         )
-    
+
     def get_secret_scanning_alert(self, number: int, hide_secret: Opt[bool] = NotSet) -> SecretScanAlert:
         """
         :calls: `GET /repos/{owner}/{repo}/secret-scanning/alerts/{alert_number} <https://docs.github.com/en/rest/secret-scanning/secret-scanning#get-a-secret-scanning-alert>`_

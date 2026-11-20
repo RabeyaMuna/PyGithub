@@ -1624,7 +1624,7 @@ class Organization(CompletableGithubObject):
             f"{self.url}/dependabot/alerts",
             url_parameters,
         )
-    
+
     def get_codescan_alerts(
         self,
         tool_name: Opt[str] = NotSet,
@@ -1679,7 +1679,7 @@ class Organization(CompletableGithubObject):
             f"{self.url}/code-scanning/alerts",
             url_parameters,
         )
-    
+
     def get_secret_scanning_alerts(
         self,
         state: Opt[str] = NotSet,
