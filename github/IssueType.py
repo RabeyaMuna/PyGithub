@@ -37,20 +37,22 @@
 
 from __future__ import annotations
 
-from datetime import datetime
-
-from typing import Any
 import urllib.parse
-from github.GithubObject import Attribute, CompletableGithubObject, NotSet, Opt, is_optional
+from datetime import datetime
+from typing import Any
+
+from github.GithubObject import Attribute, CompletableGithubObject, NotSet
 
 
 class IssueType(CompletableGithubObject):
     """
     This class represents IssueTypes.
-    
+
     The OpenAPI schema can be found at
     - /components/schemas/issue-type
+
     """
+
     def _initAttributes(self) -> None:
         self._id: Attribute[int] = NotSet
         self._node_id: Attribute[str] = NotSet
@@ -60,54 +62,54 @@ class IssueType(CompletableGithubObject):
         self._created_at: Attribute[datetime] = NotSet
         self._updated_at: Attribute[datetime] = NotSet
         self._is_enabled: Attribute[bool] = NotSet
-        
+
     def __repr__(self) -> str:
         return self.get__repr__({"name": self._name.value})
-    
+
     @property
     def _identity(self) -> str:
         return urllib.parse.quote(self.name)
-    
+
     @property
     def id(self) -> int:
         self._completeIfNotSet(self._id)
         return self._id.value
-    
+
     @property
     def node_id(self) -> str:
         self._completeIfNotSet(self._node_id)
         return self._node_id.value
-    
+
     @property
     def name(self) -> str:
         self._completeIfNotSet(self._name)
         return self._name.value
-    
+
     @property
     def description(self) -> str:
         self._completeIfNotSet(self._description)
         return self._description.value
-        
+
     @property
     def color(self) -> str:
         self._completeIfNotSet(self._color)
         return self._color.value
-    
+
     @property
     def created_at(self) -> datetime:
         self._completeIfNotSet(self._created_at)
         return self._created_at.value
-    
+
     @property
     def updated_at(self) -> datetime:
         self._completeIfNotSet(self._updated_at)
         return self._updated_at.value
-    
+
     @property
     def is_enabled(self) -> bool:
         self._completeIfNotSet(self._is_enabled)
         return self._is_enabled.value
-    
+
     def _useAttributes(self, attributes: dict[str, Any]) -> None:
         if "id" in attributes:
             self._id = self._makeIntAttribute(attributes["id"])
@@ -125,4 +127,3 @@ class IssueType(CompletableGithubObject):
             self._updated_at = self._makeDatetimeAttribute(attributes["updated_at"])
         if "is_enabled" in attributes:
             self._is_enabled = self._makeBoolAttribute(attributes["is_enabled"])
-            
