@@ -1,84 +1,84 @@
 ############################ Copyrights and license ############################
 #                                                                              #
-# Copyright 2012 Steve English <steve.english@navetas.com>                     #
-# Copyright 2012 Vincent Jacques <vincent@vincent-jacques.net>                 #
-# Copyright 2012 Zearin <zearin@gonk.net>                                      #
-# Copyright 2013 AKFish <akfish@gmail.com>                                     #
-# Copyright 2013 Vincent Jacques <vincent@vincent-jacques.net>                 #
-# Copyright 2013 martinqt <m.ki2@laposte.net>                                  #
-# Copyright 2014 Vincent Jacques <vincent@vincent-jacques.net>                 #
-# Copyright 2015 Sebastien Besson <seb.besson@gmail.com>                       #
-# Copyright 2016 Jannis Gebauer <ja.geb@me.com>                                #
-# Copyright 2016 Matthew Neal <meneal@matthews-mbp.raleigh.ibm.com>            #
-# Copyright 2016 Michael Pereira <pereira.m@gmail.com>                         #
-# Copyright 2016 Peter Buckley <dx-pbuckley@users.noreply.github.com>          #
-# Copyright 2017 Balázs Rostás <rostas.balazs@gmail.com>                       #
-# Copyright 2018 Anton Nguyen <afnguyen85@gmail.com>                           #
-# Copyright 2018 Jacopo Notarstefano <jacopo.notarstefano@gmail.com>           #
-# Copyright 2018 Jasper van Wanrooy <jasper@vanwanrooy.net>                    #
-# Copyright 2018 Raihaan <31362124+res0nance@users.noreply.github.com>         #
-# Copyright 2018 Shubham Singh <41840111+singh811@users.noreply.github.com>    #
-# Copyright 2018 Steve Kowalik <steven@wedontsleep.org>                        #
-# Copyright 2018 Tim Boring <tboring@hearst.com>                               #
-# Copyright 2018 Wan Liuyang <tsfdye@gmail.com>                                #
-# Copyright 2018 Yossarian King <yggy@blackbirdinteractive.com>                #
-# Copyright 2018 sfdye <tsfdye@gmail.com>                                      #
-# Copyright 2019 Brian Choy <byceee@gmail.com>                                 #
-# Copyright 2019 Geoffroy Jabouley <gjabouley@invensense.com>                  #
-# Copyright 2019 Pascal Bach <pasci.bach@gmail.com>                            #
-# Copyright 2019 Raihaan <31362124+res0nance@users.noreply.github.com>         #
-# Copyright 2019 Shibasis Patel <smartshibasish@gmail.com>                     #
-# Copyright 2019 Steve Kowalik <steven@wedontsleep.org>                        #
-# Copyright 2019 Wan Liuyang <tsfdye@gmail.com>                                #
-# Copyright 2019 ebrown <brownierin@users.noreply.github.com>                  #
-# Copyright 2020 Anuj Bansal <bansalanuj1996@gmail.com>                        #
-# Copyright 2020 Glenn McDonald <testworksau@users.noreply.github.com>         #
-# Copyright 2020 Steve Kowalik <steven@wedontsleep.org>                        #
-# Copyright 2020 latacora-daniel <71085674+latacora-daniel@users.noreply.github.com>#
-# Copyright 2020 ton-katsu <sakamoto.yoshihisa@gmail.com>                      #
-# Copyright 2021 James Simpson <jsimpso@users.noreply.github.com>              #
-# Copyright 2021 Marina Peresypkina <mi9onev@gmail.com>                        #
-# Copyright 2021 Mark Walker <mark.walker@realbuzz.com>                        #
-# Copyright 2021 Steve Kowalik <steven@wedontsleep.org>                        #
-# Copyright 2021 Tanner <51724788+lightningboltemoji@users.noreply.github.com> #
-# Copyright 2022 KimSia Sim <245021+simkimsia@users.noreply.github.com>        #
-# Copyright 2023 Enrico Minack <github@enrico.minack.dev>                      #
-# Copyright 2023 Felipe Peter <mr-peipei@web.de>                               #
-# Copyright 2023 Jirka Borovec <6035284+Borda@users.noreply.github.com>        #
-# Copyright 2023 Jonathan Greg <31892308+jmgreg31@users.noreply.github.com>    #
-# Copyright 2023 Jonathan Leitschuh <jonathan.leitschuh@gmail.com>             #
-# Copyright 2023 Mark Amery <markamery@btinternet.com>                         #
-# Copyright 2023 Mauricio Alejandro Martínez Pacheco <mauricio.martinez@premise.com>#
-# Copyright 2023 Mauricio Alejandro Martínez Pacheco <n_othing@hotmail.com>    #
-# Copyright 2023 Oliver Mannion <125105+tekumara@users.noreply.github.com>     #
-# Copyright 2023 Trim21 <trim21.me@gmail.com>                                  #
-# Copyright 2024 Andrii Kezikov <cheshirez@gmail.com>                          #
-# Copyright 2024 Bill Napier <napier@pobox.com>                                #
-# Copyright 2024 Enrico Minack <github@enrico.minack.dev>                      #
-# Copyright 2024 Jacky Lam <jacky.lam@r2studiohk.com>                          #
-# Copyright 2024 Jirka Borovec <6035284+Borda@users.noreply.github.com>        #
-# Copyright 2024 Mohamed Mostafa <112487260+mohy01@users.noreply.github.com>   #
-# Copyright 2024 Oskar Jansson <56458534+janssonoskar@users.noreply.github.com>#
-# Copyright 2024 Pasha Fateev <pasha@autokitteh.com>                           #
-# Copyright 2024 Thomas Cooper <coopernetes@proton.me>                         #
-# Copyright 2024 Thomas Crowley <15927917+thomascrowley@users.noreply.github.com>#
-# Copyright 2025 Bill Napier <napier@pobox.com>                                #
-# Copyright 2025 Dom Heinzeller <dom.heinzeller@icloud.com>                    #
-# Copyright 2025 Enrico Minack <github@enrico.minack.dev>                      #
-# Copyright 2025 Matthew Davis <35502728+matt-davis27@users.noreply.github.com>#
+# Copyright 2012 Steve English <steve.english@navetas.com>                    #
+# Copyright 2012 Vincent Jacques <vincent@vincent-jacques.net>                #
+# Copyright 2012 Zearin <zearin@gonk.net>                                     #
+# Copyright 2013 AKFish <akfish@gmail.com>                                    #
+# Copyright 2013 Vincent Jacques <vincent@vincent-jacques.net>                #
+# Copyright 2013 martinqt <m.ki2@laposte.net>                                 #
+# Copyright 2014 Vincent Jacques <vincent@vincent-jacques.net>                #
+# Copyright 2015 Sebastien Besson <seb.besson@gmail.com>                      #
+# Copyright 2016 Jannis Gebauer <ja.geb@me.com>                               #
+# Copyright 2016 Matthew Neal <meneal@matthews-mbp.raleigh.ibm.com>           #
+# Copyright 2016 Michael Pereira <pereira.m@gmail.com>                        #
+# Copyright 2016 Peter Buckley <dx-pbuckley@users.noreply.github.com>         #
+# Copyright 2017 Balázs Rostás <rostas.balazs@gmail.com>                      #
+# Copyright 2018 Anton Nguyen <afnguyen85@gmail.com>                          #
+# Copyright 2018 Jacopo Notarstefano <jacopo.notarstefano@gmail.com>          #
+# Copyright 2018 Jasper van Wanrooy <jasper@vanwanrooy.net>                   #
+# Copyright 2018 Raihaan <31362124+res0nance@users.noreply.github.com>        #
+# Copyright 2018 Shubham Singh <41840111+singh811@users.noreply.github.com>   #
+# Copyright 2018 Steve Kowalik <steven@wedontsleep.org>                       #
+# Copyright 2018 Tim Boring <tboring@hearst.com>                              #
+# Copyright 2018 Wan Liuyang <tsfdye@gmail.com>                              #
+# Copyright 2018 Yossarian King <yggy@blackbirdinteractive.com>               #
+# Copyright 2018 sfdye <tsfdye@gmail.com>                                   #
+# Copyright 2019 Brian Choy <byceee@gmail.com>                                #
+# Copyright 2019 Geoffroy Jabouley <gjabouley@invensense.com>                 #
+# Copyright 2019 Pascal Bach <pasci.bach@gmail.com>                           #
+# Copyright 2019 Raihaan <31362124+res0nance@users.noreply.github.com>        #
+# Copyright 2019 Shibasis Patel <smartshibasish@gmail.com>                    #
+# Copyright 2019 Steve Kowalik <steven@wedontsleep.org>                       #
+# Copyright 2019 Wan Liuyang <tsfdye@gmail.com>                              #
+# Copyright 2019 ebrown <brownierin@users.noreply.github.com>                #
+# Copyright 2020 Anuj Bansal <bansalanuj1996@gmail.com>                       #
+# Copyright 2020 Glenn McDonald <testworksau@users.noreply.github.com>        #
+# Copyright 2020 Steve Kowalik <steven@wedontsleep.org>                       #
+# Copyright 2020 latacora-daniel <71085674+latacora-daniel@users.noreply.github.com>
+# Copyright 2020 ton-katsu <sakamoto.yoshihisa@gmail.com>                     #
+# Copyright 2021 James Simpson <jsimpso@users.noreply.github.com>             #
+# Copyright 2021 Marina Peresypkina <mi9onev@gmail.com>                       #
+# Copyright 2021 Mark Walker <mark.walker@realbuzz.com>                      #
+# Copyright 2021 Steve Kowalik <steven@wedontsleep.org>                      #
+# Copyright 2021 Tanner <51724788+lightningboltemoji@users.noreply.github.com>
+# Copyright 2022 KimSia Sim <245021+simkimsia@users.noreply.github.com>       #
+# Copyright 2023 Enrico Minack <github@enrico.minack.dev>                     #
+# Copyright 2023 Felipe Peter <mr-peipei@web.de>                              #
+# Copyright 2023 Jirka Borovec <6035284+Borda@users.noreply.github.com>       #
+# Copyright 2023 Jonathan Greg <31892308+jmgreg31@users.noreply.github.com>   #
+# Copyright 2023 Jonathan Leitschuh <jonathan.leitschuh@gmail.com>            #
+# Copyright 2023 Mark Amery <markamery@btinternet.com>                      #
+# Copyright 2023 Mauricio Alejandro Martínez Pacheco <mauricio.martinez@premise.com>
+# Copyright 2023 Mauricio Alejandro Martínez Pacheco <n_othing@hotmail.com>   #
+# Copyright 2023 Oliver Mannion <125105+tekumara@users.noreply.github.com>    #
+# Copyright 2023 Trim21 <trim21.me@gmail.com>                                 #
+# Copyright 2024 Andrii Kezikov <cheshirez@gmail.com>                         #
+# Copyright 2024 Bill Napier <napier@pobox.com>                               #
+# Copyright 2024 Enrico Minack <github@enrico.minack.dev>                     #
+# Copyright 2024 Jacky Lam <jacky.lam@r2studiohk.com>                         #
+# Copyright 2024 Jirka Borovec <6035284+Borda@users.noreply.github.com>       #
+# Copyright 2024 Mohamed Mostafa <112487260+mohy01@users.noreply.github.com>  #
+# Copyright 2024 Oskar Jansson <56458534+janssonoskar@users.noreply.github.com>
+# Copyright 2024 Pasha Fateev <pasha@autokitteh.com>                          #
+# Copyright 2024 Thomas Cooper <coopernetes@proton.me>                        #
+# Copyright 2024 Thomas Crowley <15927917+thomascrowley@users.noreply.github.com>
+# Copyright 2025 Bill Napier <napier@pobox.com>                               #
+# Copyright 2025 Dom Heinzeller <dom.heinzeller@icloud.com>                   #
+# Copyright 2025 Enrico Minack <github@enrico.minack.dev>                     #
+# Copyright 2025 Matthew Davis <35502728+matt-davis27@users.noreply.github.com>
 #                                                                              #
-# This file is part of PyGithub.                                               #
-# http://pygithub.readthedocs.io/                                              #
+# This file is part of PyGithub.                                              #
+# http://pygithub.readthedocs.io/                                             #
 #                                                                              #
-# PyGithub is free software: you can redistribute it and/or modify it under    #
-# the terms of the GNU Lesser General Public License as published by the Free  #
+# PyGithub is free software: you can redistribute it and/or modify it under   #
+# the terms of the GNU Lesser General Public License as published by the Free   #
 # Software Foundation, either version 3 of the License, or (at your option)    #
-# any later version.                                                           #
+# any later version.                                                          #
 #                                                                              #
-# PyGithub is distributed in the hope that it will be useful, but WITHOUT ANY  #
+# PyGithub is distributed in the hope that it will be useful, but WITHOUT ANY #
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS    #
 # FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more #
-# details.                                                                     #
+# details.                                                                    #
 #                                                                              #
 # You should have received a copy of the GNU Lesser General Public License     #
 # along with PyGithub. If not, see <http://www.gnu.org/licenses/>.             #
